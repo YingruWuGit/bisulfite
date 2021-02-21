@@ -1,3 +1,5 @@
+fn = ".csv"
+
 import math
 import numpy as np
 from scipy.special import logsumexp
@@ -6,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 class Dsid:
-    def __init__(self, filename):
+    def __init__(self, filename, sc = 25):
         self.filename = filename;
         self.reads = pd.read_csv(self.filename).set_index("id");
         self.index = [int(x[2:]) for x in self.reads.columns[:-1]];
@@ -17,8 +19,8 @@ class Dsid:
             self.totFeq += read[1][-1];
             self.totSeq += read[1][:-1] * read[1][-1];
         self.N = self.totFeq;
-        self.totSeq = self.totSeq / self.totFeq * 25;
-        self.totFeq = 25;
+        self.totSeq = self.totSeq / self.totFeq * sc;
+        self.totFeq = sc;
         self.a0 = self.totFeq;
         self.mu0 = sum(self.totSeq) / (self.n * self.totFeq);
         self.alp0 = self.mu0 * self.a0;
@@ -130,7 +132,7 @@ class Dsid:
 
 
 if __name__ == "__main__":
-    sample = Dsid("C:/Users/Yingru/Dropbox/bisulfite/data/dsid_C_1461_0.csv");
+    sample = Dsid(fn);
     sample.choose();
     sample.calculatePQ();
     sample.calculateBeta();
