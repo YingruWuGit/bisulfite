@@ -1,3 +1,2 @@
-set filename and path in line 133.
+"Clustering" is used for clustering. In example "dsid_C_1461.csv" is the original dataset need to do the clustering.
 
-output is named as "_res.csv" file. And two pics.
