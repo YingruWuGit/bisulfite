@@ -2,7 +2,7 @@
 
 This is an optional step. If the dataset contains sequences with different bisulfite accessible patches, then "clustering.py" is used to divide the whole dataset into multiple groups.
 
-In example folder, "dsid_C_1461.csv" is a dataset needs clustering. It's first column is the id of each sequence and last column is the frequency of each sequence.
+In example folder, "dsid_C_1461.csv" is a dataset needs clustering. It's first column is the id of each sequence and the last column is the frequency of each sequence.
 
 "clustering.py" needs two arguments.
 
