@@ -1,13 +1,9 @@
-fn = ".csv"
-cn = 
+fn = "C:/Users/Yingru/Source/Repos/bisf/data/dsid_C_1461.csv"
+cn = 7
 
-import operator
-import numpy as np
+
 import pandas as pd
-import sklearn
 from sklearn.cluster import AgglomerativeClustering
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
 
 
 def hamming(seq1, seq2):
