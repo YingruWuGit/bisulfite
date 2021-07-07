@@ -10,20 +10,22 @@ Line 1 is the path and name of the csv file.
 
 Line 2 is the cluster number.
 
-It outputs a csv file for each cluster in the same folder.
+It outputs a csv file for each cluster with the same format, in the same folder.
 
 # Bayesian Segmentation
 
-"bayesian_segment.py" is used for detecting bisulfite accessible regions.
+"bayesian_segment.py" is used for detecting bisulfite accessible regions (BAR).
 
-In the example folder, "dsid_C_1461_0.csv" is one of the clusters outputed by "clustering.py".
+In the "example" folder, "dsid_C_1461_0.csv" is one of the clusters outputed by "clustering.py".
 
-"bayesian_segment.py" needs only one argument, that is the path and name of dataset in line 1: ~/dsid_C_1461_0.csv
+"bayesian_segment.py" needs only one argument:
 
-It outputs "dsid_C_1461_0_res.csv" in the same folder. The "dsid_C_1461_0_res.csv" will have two more rows.
+Line 1 is the path and name of the csv file.
 
-Row 2 is the posterior probability of a change occured in each location.
+It outputs "dsid_C_1461_0_res.csv" in the same folder. The "dsid_C_1461_0_res.csv" will have two additional rows:
 
-Row 3 is the posterior probability that each location would respond to bisulfite.
+Row 2 `prob of change` is the posterior probability of a change occured for each site.
 
-It also outputs two graphs. One is a summary of dataset and posterior response rates, the other is the distribution of patch size.
+Row 3 `prob of response` is the posterior response probability to bisulfite for each site.
+
+It also outputs two graphs. One is the summary of dataset and posterior response rates, the other is the distribution of patch size.
