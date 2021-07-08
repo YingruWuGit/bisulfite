@@ -36,6 +36,6 @@ In the above fig, the horizontal axis is th bp locations and the vertical axis i
 
 The blue dots and lines are the means and standard deviations form the data, the red dots are the posterior estimations form our Bayesian segmentation model.
 
-![alt text](https://github.com/YingruWuGit/bisulfite/blob/main/example/Figure_2.png=250x250)
+![alt text](https://github.com/YingruWuGit/bisulfite/blob/main/example/Figure_2.png = 250x250)
 
 In the above fig, the blue bars are the patch size distribution.
