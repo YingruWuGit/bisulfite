@@ -29,3 +29,5 @@ Row 2 `prob of change` is the posterior probability of a change occured for each
 Row 3 `prob of response` is the posterior response probability to bisulfite for each site.
 
 It also outputs two graphs. One is the summary of dataset and posterior response rates, the other is the distribution of patch size.
+
+![alt text](https://github.com/YingruWuGit/bisulfite/blob/main/example/Figure_1.png)
