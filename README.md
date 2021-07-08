@@ -31,3 +31,11 @@ Row 3 `prob of response` is the posterior response probability to bisulfite for 
 It also outputs two graphs. One is the summary of dataset and posterior response rates, the other is the distribution of patch size.
 
 ![alt text](https://github.com/YingruWuGit/bisulfite/blob/main/example/Figure_1.png)
+
+In the above fig, the horizontal axis is th bp locations and the vertical axis is the response probability to bisulfite.
+
+The blue dots and lines are the means and standard deviations form the data, the red dots are the posterior estimations form our Bayesian segmentation model.
+
+![alt text](https://github.com/YingruWuGit/bisulfite/blob/main/example/Figure_2.png)
+
+In the above fig, the blue bars are the patch size distribution.
