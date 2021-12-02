@@ -6,9 +6,9 @@ In the "example" folder, the csv file "dsid_C_1461.csv" is a dataset needs to be
 
 "clustering.py" needs two arguments:
 
-Line 1 is the path and name of the csv file.
+Line 2 is the path and name of the csv file.
 
-Line 2 is the cluster number.
+Line 3 is the cluster number.
 
 It outputs a csv file for each cluster with the same format, in the same folder.
 
@@ -20,7 +20,7 @@ In the "example" folder, "dsid_C_1461_0.csv" is one of the clusters outputed by 
 
 "bayesian_segment.py" needs only one argument:
 
-Line 1 is the path and name of the csv file.
+Line 2 is the path and name of the csv file.
 
 It outputs "dsid_C_1461_0_res.csv" in the same folder. The "dsid_C_1461_0_res.csv" will have two additional rows:
 
