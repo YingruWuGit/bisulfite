@@ -2,7 +2,7 @@
 
 This is an optional step. If the dataset contains sequences with different bisulfite accessible patches, then "clustering.py" is needed to divide the whole dataset into multiple groups.
 
-In the "example" folder, the csv file "dsid_C_1461.csv" is a dataset needs to be divided into clusters. It's first column `id` is the id of each sequence and the last column `feq` is the frequency of each sequence. It's first row contains the location sites.
+In the "example" folder, the csv file "dsid_C_1461.csv" is a dataset needs to be divided into clusters. It's first column `id` is the id of each sequence and the last column `feq` is the frequency of each sequence. It's first row contains the location indices.
 
 "clustering.py" needs two arguments:
 
@@ -10,7 +10,7 @@ Line 2 is the path and name of the csv file.
 
 Line 3 is the cluster number.
 
-It outputs a csv file for each cluster with the same format, in the same folder.
+It generates one csv file for each cluster with the same format, in the same folder.
 
 # Bayesian Segmentation
 
