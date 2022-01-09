@@ -1,3 +1,5 @@
+"clustering.py" and "bayesian_segment.py" contain the source code used for analyzing bisulfite accessible single-stranded DNA. For the details of our method and results, please refer to `A Bayesian model based computational analysis of the relationship between bisulfite accessible single-stranded DNA in chromatin and somatic hypermutation of immunoglobulin genes. Plos Computational Biology (2021)`.
+
 # Clustering
 
 This is an optional step. If the dataset contains sequences with different bisulfite accessible patches, then "clustering.py" is needed to divide the whole dataset into multiple groups.
