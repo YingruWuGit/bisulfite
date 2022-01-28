@@ -9,11 +9,14 @@ import matplotlib.pyplot as plt
 from scipy.special import logsumexp
 
 
+SCALE = 25
+
+
 class Dsid:
     '''
     This class is a bisulfite sequence dataset
     '''
-    def __init__(self, filename, scale = 25):
+    def __init__(self, filename, scale = SCALE):
         '''
         filename: the bisulfite sequence dataset .csv file name
         scale: scale makes all datasets have the same scaled totFeq, thus same variance, 25 good in practice.
