@@ -91,7 +91,7 @@ class Dsid:
 
     def calculateIt(self):
         self.I[0] = 1
-        for t in range(1, self.n - 1):
+        for t in range(0, self.n - 1):
             self.I[t + 1] = self.p[t + 1] / np.exp(self.Bs[t]) if self.Bs[t] < 500 else 0
         return
 
