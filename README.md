@@ -40,3 +40,7 @@ In the above figure, the horizontal axis is the bp locations and the vertical ax
 ![alt text](https://github.com/YingruWuGit/bisulfite/blob/main/example/Figure_2.png)
 
 In the above figure, the blue bars are the patch size distribution.
+
+### Computational Complexity
+
+The time complexity of the Bayesian Segmentation is `O(n^3)`
