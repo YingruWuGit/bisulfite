@@ -43,4 +43,4 @@ In the above figure, the blue bars are the patch size distribution.
 
 ### Computational Complexity
 
-The time complexity of the Bayesian Segmentation is `O(n^3)`
+The time complexity of the Bayesian Segmentation is `O(n^3)`, in which `n` is the length of the sequence. The space complexity is `O(n^3)` in the current implementation, which is not the most efficient way. If we only need to calculate the posterior probability of change and response rate to bisulfite at each point, then `O(n^2)` space complexity can be achieved. While if the BAR size inference is needed, then it has to be `O(n^3)`.
