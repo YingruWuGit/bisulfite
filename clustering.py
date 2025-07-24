@@ -8,16 +8,16 @@ from sklearn.cluster import AgglomerativeClustering
 
 
 def hamming(seq1, seq2):
-    '''
+    """
     calculate hamming distance between two sequences
-    '''
+    """
     return sum(s1 != s2 for s1, s2 in zip(seq1, seq2))
 
 
 def divide(filename, clusters):
-    '''
+    """
     divide filename into clusters groups and store them separately
-    '''
+    """
     reads = pd.read_csv(filename).set_index("id")
     seqs = [list(row[:-1]) for _, row in reads.iterrows()]
     sMatrix = [[hamming(seq1, seq2) for seq2 in seqs] for seq1 in seqs]

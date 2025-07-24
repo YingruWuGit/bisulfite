@@ -13,14 +13,14 @@ SCALE = 25
 
 
 class Dsid:
-    '''
+    """
     This class is a bisulfite sequence dataset
-    '''
+    """
     def __init__(self, filename, scale = SCALE):
-        '''
+        """
         filename: the bisulfite sequence dataset .csv file name
         scale: scale makes all datasets have the same scaled totFeq, thus same variance, 25 is good in practice.
-        '''
+        """
         self.filename = filename
         self.reads = pd.read_csv(self.filename).set_index("id")
         self.index = [int(x[2:]) for x in self.reads.columns[:-1]]
